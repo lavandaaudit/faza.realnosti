@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="uk">
+
+<head>
+    <meta charset="UTF-8">
+    <title>IBONARIUM · COSMO-SCAN · DEEP SPACE VECTOR</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <canvas id="bg-stars"></canvas>
+    <canvas id="glitch-overlay"></canvas>
+
+    <div class="v-msg" id="alert-msg">PHASE COLLAPSE</div>
+
+    <div class="app-container">
+        <!-- HEADER -->
+        <header class="header">
+            <div class="brand-box">
+                <div class="brand">IBONARIUM // REALITY.QUANTUM.ULTIMATE</div>
+                <div class="sub-brand">ГЛИБОКИЙ КОСМІЧНИЙ СКАНЕР · ШАР L4: DEEP COSMOS FIXED</div>
+            </div>
+            <div style="text-align:right">
+                <div id="clock" style="font-size:18px; font-weight:200; font-family:'Space Mono';">00:00:00.000</div>
+                <div style="font-size:8px; color:#444d56; letter-spacing:2px;">LOCAL FIXATION / UTC+2</div>
+            </div>
+        </header>
+
+        <!-- COLUMN 1: PHY/GEO -->
+        <div class="col-data">
+            <div class="section">
+                <div class="section-h"><span>L0: ГЕОФІЗИЧНИЙ ШАР</span></div>
+                <div class="layer-box" id="cat-geo"></div>
+                <div class="desc-text" id="desc-geo">Моніторинг сонячного вітру та геомагнітних бурь...</div>
+            </div>
+            <div class="section">
+                <div class="section-h"><span>L1: СОЦІО-ЦИФРОВИЙ ШАР</span></div>
+                <div class="layer-box" id="cat-soc"></div>
+                <div class="desc-text" id="desc-soc">Детекція колективної тривоги та AI-активності...</div>
+            </div>
+        </div>
+
+        <!-- COLUMN 2: BIO/QNT -->
+        <div class="col-data">
+            <div class="section">
+                <div class="section-h"><span>L2: БІОСФЕРНИЙ ШАР</span></div>
+                <div class="layer-box" id="cat-bio"></div>
+                <div class="desc-text" id="desc-bio">Моніторинг резонансів Шумана та біо-поля...</div>
+            </div>
+            <div class="section">
+                <div class="section-h"><span>L3: КВАНТОВИЙ ШАР</span></div>
+                <div class="layer-box" id="cat-qnt"></div>
+                <div class="desc-text" id="desc-qnt">Вимірювання вакуумного розпаду та джитера часу...</div>
+            </div>
+        </div>
+
+        <!-- COLUMN 3: VIZ (Center-Right) -->
+        <div class="col-center">
+            <canvas id="viz-canvas"></canvas>
+
+            <div class="center-hud">
+                <div class="idx-lbl">RCI : REALITY CONVERGENCE INDEX</div>
+                <div class="big-idx" id="rci">0.5000</div>
+            </div>
+
+            <div id="phase-indicator">
+                <div style="font-size:8px; color:#556; letter-spacing:2px;">ПОТОЧНА ФАЗА РЕАЛЬНОСТІ</div>
+                <div class="phase-name" id="phase-name">СИНХРОНІЗАЦІЯ</div>
+            </div>
+        </div>
+
+        <!-- COLUMN 4: COSMOS (NEW) -->
+        <div class="col-data">
+            <div class="section">
+                <div class="section-h"><span>L4: ГЛИБОКИЙ КОСМОС</span> <span style="color:var(--accent-pri)">NEW</span>
+                </div>
+                <div class="layer-box" id="cat-cosmos"></div>
+                <div class="desc-text" id="desc-cosmos">Аналіз реліктового випромінювання та космічних променів...</div>
+            </div>
+
+            <div class="section" style="flex:1; display:flex; flex-direction:column; justify-content:flex-end;">
+                <div class="section-h"><span>📡 ЖУРНАЛ ПОДІЙ</span></div>
+                <div class="log-box" id="log-scroll"></div>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
